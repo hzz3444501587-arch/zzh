@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Git 常用命令速查手册 — ZZH's Blog</title><link rel="stylesheet" href="../css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>"></head><body>
+<header class="site-header"><div class="header-inner"><a href="../index.html" class="site-logo">ZZH</a><button class="nav-toggle" aria-label="菜单"><span></span><span></span><span></span></button><nav class="site-nav"><a href="../index.html">首页</a><a href="../about.html">关于</a><a href="https://github.com/hzz3444501587-arch" target="_blank">GitHub</a><div class="theme-toggle" title="切换主题"><span class="theme-icon theme-icon-sun">☀</span><span class="theme-icon theme-icon-moon">☾</span></div></nav></div></header>
+<main class="post-page reveal"><div class="post-header"><span class="tag tag-code">代码编程</span><h1>Git 常用命令速查手册</h1><div class="meta">2026.04.06 · 阅读 4 分钟</div></div>
+<div class="post-content"><p>Git 是每个开发者必须掌握的工具。整理了日常使用频率最高的命令。</p>
+<h2>基础操作</h2><pre><code>git init
+git clone https://github.com/user/repo.git
+git status
+git add .
+git commit -m "提交说明"</code></pre>
+<h2>分支管理</h2><pre><code>git branch
+git checkout -b feature/login
+git merge feature/login
+git branch -d feature/login</code></pre>
+<h2>远程操作</h2><pre><code>git push origin main
+git pull origin main
+git remote -v</code></pre>
+<h2>撤销操作</h2><pre><code>git checkout -- filename.cs
+git reset --hard HEAD~1
+git log --oneline --graph</code></pre>
+<h2>实用技巧</h2><ul><li>用 <code>.gitignore</code> 排除 <code>bin/</code> 和 <code>obj/</code></li><li>提交信息写清楚改了什么</li><li>经常 <code>git pull</code> 避免冲突积累</li></ul>
+<blockquote>Git 的大多数操作都可以撤销，大胆实践！</blockquote></div>
+<div class="post-nav"><a href="english-reading.html">← 英语阅读精析</a><a href="genshin-review.html">原神体验分享 →</a></div></main>
+<footer class="site-footer"><p>&copy; 2026 ZZH's Blog · Powered by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p></footer>
+<script src="../js/main.js"></script></body></html>

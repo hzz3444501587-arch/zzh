@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZZH's Blog — 记录成长的每一个瞬间</title>
+  <meta name="description" content="考研备战 · 编程成长 · 生活点滴 · 游戏时光">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo">ZZH</a>
+    <button class="nav-toggle" aria-label="菜单"><span></span><span></span><span></span></button>
+    <nav class="site-nav">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于</a>
+      <a href="https://github.com/hzz3444501587-arch" target="_blank">GitHub</a>
+      <div class="theme-toggle" title="切换主题">
+        <span class="theme-icon theme-icon-sun">☀</span>
+        <span class="theme-icon theme-icon-moon">☾</span>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero reveal">
+  <div class="line"></div>
+  <div class="label">Personal Journal</div>
+  <h1>在考研路上，用代码和文字<br>记录每一个值得铭记的瞬间</h1>
+  <p class="subtitle">考研备战 · 编程成长 · 生活点滴 · 游戏时光</p>
+  <div class="line-bottom"></div>
+</section>
+
+<!-- ===== Featured ===== -->
+<div class="section-title reveal">
+  <span class="bar"></span>
+  <span class="text">Featured</span>
+  <span class="line"></span>
+</div>
+
+<section class="featured">
+  <a href="posts/math-limits.html" class="featured-main reveal">
+    <span class="tag tag-exam">考研学习</span>
+    <h2 class="card-title" style="font-size:22px;">数学一 · 高等数学极限专题复习</h2>
+    <p class="card-excerpt">系统梳理了极限的定义、求解方法和常见题型，包括洛必达法则、等价无穷小替换和泰勒展开的应用技巧，附带历年真题分析。</p>
+    <div class="card-meta">
+      <span>2026.04.12 · 阅读 8 分钟</span>
+      <span class="read-more">阅读全文 →</span>
+    </div>
+  </a>
+  <div class="featured-side">
+    <a href="posts/winforms-login.html" class="featured-side-card reveal reveal-delay-1">
+      <span class="tag tag-code">代码编程</span>
+      <h2 class="card-title" style="font-size:16px;">C# WinForms 登录窗体实现</h2>
+      <div class="card-meta"><span>2026.04.10</span><span class="read-more">→</span></div>
+    </a>
+    <a href="posts/campus-spring.html" class="featured-side-card reveal reveal-delay-2">
+      <span class="tag tag-life">生活随记</span>
+      <h2 class="card-title" style="font-size:16px;">四月的校园随拍</h2>
+      <div class="card-meta"><span>2026.04.05</span><span class="read-more">→</span></div>
+    </a>
+  </div>
+</section>
+
+<!-- ===== Latest ===== -->
+<div class="section-title reveal">
+  <span class="bar"></span>
+  <span class="text">Latest</span>
+  <span class="line"></span>
+</div>
+
+<section class="posts-section">
+  <div class="filter-bar">
+    <button class="filter-btn active" data-category="all">全部</button>
+    <button class="filter-btn" data-category="exam">📚 考研学习</button>
+    <button class="filter-btn" data-category="code">💻 代码编程</button>
+    <button class="filter-btn" data-category="life">🌿 生活随记</button>
+    <button class="filter-btn" data-category="game">🎮 游戏生活</button>
+  </div>
+
+  <div class="posts-grid">
+
+    <article class="post-card reveal reveal-delay-1" data-category="exam">
+      <span class="tag tag-exam">考研学习</span>
+      <h2 class="card-title"><a href="posts/english-reading.html">英语一 · 阅读理解真题精析</a></h2>
+      <p class="card-excerpt">精读 2020-2025 年英语一阅读真题，总结命题规律、干扰项特征和高效解题策略。</p>
+      <div class="card-meta"><span>2026.04.08 · 阅读 6 分钟</span></div>
+    </article>
+
+    <article class="post-card reveal reveal-delay-2" data-category="code">
+      <span class="tag tag-code">代码编程</span>
+      <h2 class="card-title"><a href="posts/git-commands.html">Git 常用命令速查手册</a></h2>
+      <p class="card-excerpt">整理了日常开发中最常用的 Git 命令，涵盖分支管理、版本回退和冲突解决。</p>
+      <div class="card-meta"><span>2026.04.06 · 阅读 4 分钟</span></div>
+    </article>
+
+    <article class="post-card reveal reveal-delay-3" data-category="game">
+      <span class="tag tag-game">游戏生活</span>
+      <h2 class="card-title"><a href="posts/genshin-review.html">原神 5.0 新角色体验分享</a></h2>
+      <p class="card-excerpt">5.0 更新后的新角色培养心得和配队思路分享，附上深渊实战体验。</p>
+      <div class="card-meta"><span>2026.04.03 · 阅读 5 分钟</span></div>
+    </article>
+
+    <article class="post-card reveal reveal-delay-4" data-category="exam">
+      <span class="tag tag-exam">考研学习</span>
+      <h2 class="card-title"><a href="posts/sql-notes.html">数据库范式与 SQL 优化笔记</a></h2>
+      <p class="card-excerpt">课堂笔记整理：三大范式的核心概念和常见的 SQL 查询优化技巧。</p>
+      <div class="card-meta"><span>2026.04.02 · 阅读 6 分钟</span></div>
+    </article>
+
+    <article class="post-card reveal reveal-delay-5" data-category="life">
+      <span class="tag tag-life">生活随记</span>
+      <h2 class="card-title"><a href="posts/reading-notes.html">三月读书笔记：《置身事内》</a></h2>
+      <p class="card-excerpt">读完兰小欢的《置身事内》，对中国经济运行逻辑有了全新的理解。</p>
+      <div class="card-meta"><span>2026.03.28 · 阅读 4 分钟</span></div>
+    </article>
+
+    <article class="post-card reveal reveal-delay-5" data-category="game">
+      <span class="tag tag-game">游戏生活</span>
+      <h2 class="card-title"><a href="posts/steam-picks.html">Steam 春促值得入手的独立游戏</a></h2>
+      <p class="card-excerpt">分享几款春促打折的宝藏独立游戏，每款都亲测好玩。</p>
+      <div class="card-meta"><span>2026.03.25 · 阅读 3 分钟</span></div>
+    </article>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>&copy; 2026 ZZH's Blog · Powered by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

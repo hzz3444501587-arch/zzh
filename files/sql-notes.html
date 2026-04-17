@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>数据库范式与 SQL 优化笔记 — ZZH's Blog</title><link rel="stylesheet" href="../css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>"></head><body>
+<header class="site-header"><div class="header-inner"><a href="../index.html" class="site-logo">ZZH</a><button class="nav-toggle" aria-label="菜单"><span></span><span></span><span></span></button><nav class="site-nav"><a href="../index.html">首页</a><a href="../about.html">关于</a><a href="https://github.com/hzz3444501587-arch" target="_blank">GitHub</a><div class="theme-toggle" title="切换主题"><span class="theme-icon theme-icon-sun">☀</span><span class="theme-icon theme-icon-moon">☾</span></div></nav></div></header>
+<main class="post-page reveal"><div class="post-header"><span class="tag tag-exam">考研学习</span><h1>数据库范式与 SQL 优化笔记</h1><div class="meta">2026.04.02 · 阅读 6 分钟</div></div>
+<div class="post-content">
+<p>数据库设计是后端开发的基础。这篇是课堂笔记整理。</p>
+<h2>三大范式</h2>
+<h3>第一范式 (1NF)：原子性</h3><p>每个字段的值必须是不可再分的原子值。</p>
+<h3>第二范式 (2NF)：消除部分依赖</h3><p>非主键字段必须完全依赖于整个主键。</p>
+<h3>第三范式 (3NF)：消除传递依赖</h3><p>非主键字段之间不能存在传递依赖关系。</p>
+<h2>SQL 优化技巧</h2>
+<h3>1. 合理使用索引</h3>
+<pre><code>CREATE INDEX idx_student_name ON students(name);
+CREATE INDEX idx_stu_dept ON students(department_id, grade);</code></pre>
+<h3>2. 避免 SELECT *</h3>
+<pre><code>SELECT name, grade FROM students WHERE grade > 90;</code></pre>
+<h3>3. 使用 EXPLAIN 分析</h3>
+<pre><code>EXPLAIN SELECT name FROM students WHERE department_id = 3;</code></pre>
+<blockquote>先把范式搞清楚，再去谈优化。基础不牢，地动山摇。</blockquote>
+</div>
+<div class="post-nav"><a href="campus-spring.html">← 校园随拍</a><a href="reading-notes.html">读书笔记 →</a></div></main>
+<footer class="site-footer"><p>&copy; 2026 ZZH's Blog · Powered by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p></footer>
+<script src="../js/main.js"></script></body></html>
